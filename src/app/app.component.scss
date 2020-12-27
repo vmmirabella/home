@@ -1,0 +1,7 @@
+$font-size: 30px;
+
+mat-toolbar {
+  margin-bottom: 5px;
+  font-size: $font-size + 15px;
+  font-variant: small-caps;
+}

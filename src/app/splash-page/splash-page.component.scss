@@ -1,0 +1,62 @@
+$font-size: 30px;
+
+.main-content {
+  margin: 50px 20px 50px 20px;
+}
+
+
+.card-title {
+  margin-bottom: 20px;
+  font-variant: small-caps;
+}
+
+
+.content-title {
+  position: relative;
+  color: #69f0ae;
+  font-size: $font-size+5px;
+  font-variant: small-caps;
+}
+
+.card-description {
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.content-box{
+  margin: 0px 15px 0px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px;
+}
+.content-project {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.project-list-links {
+  display:inline-block;
+
+  width: 400px;
+  font-size: $font-size - 10px;
+}
+
+mat-card:hover {
+  color: #7feeb8;
+  opacity: 0.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.header-image {
+  background-size: cover;
+  border-style: double ;
+  border-width: 1px;
+  border-color: #FF8A80;
+}
+

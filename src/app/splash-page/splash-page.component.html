@@ -1,0 +1,29 @@
+<div class="main-content">
+  <div> 
+    <h2 class="content-title">Projects</h2>
+  </div>
+  <div class="content-box">
+    <div class="content-project" *ngFor="let project of projectsData">
+      <a class="project-list-links" href="{{project.sourceCodeLink}}" target="_blank" rel="noopener">
+        <mat-card >
+          <mat-card-header class="card-title">
+            <div mat-card-avatar class="header-image"
+              style="background-image: url({{project.avatarImage}})">
+            </div>
+            <mat-card-title>
+              {{project.name }}
+            </mat-card-title>
+            <mat-card-subtitle>
+              {{project.type}}
+            </mat-card-subtitle>            
+          </mat-card-header>
+          
+          <mat-divider></mat-divider>
+          <mat-card-content class="card-description">
+            {{project.description }} 
+          </mat-card-content>
+        </mat-card>
+      </a>
+    </div>
+  </div>
+</div>
