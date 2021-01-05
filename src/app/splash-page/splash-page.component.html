@@ -7,7 +7,7 @@
     <div class="content-box">
       <div class="content-project" *ngFor="let project of projectsData">
         <a class="project-list-links" href="{{project.sourceCodeLink}}" target="_blank" rel="noopener">
-          <mat-card >
+          <mat-card class="card-link">
             <mat-card-header class="card-title">
               <div mat-card-avatar class="header-image"
                 style="background-image: url({{project.avatarImage}})">
@@ -29,33 +29,45 @@
       </div>
     </div>    
   </div>
-  <!--Second Heading-->
+
+  <!--Second Heading (Demos)-->
   <div>
     <div> 
       <h2 class="content-title">{{secondHeading}}</h2>
     </div>
     <div class="content-box">
-      <div class="content-project" *ngFor="let project of demoData">
-        <a class="project-list-links" routerLink={{project.route}}>
-          <mat-card >
+      <div class="content-project" *ngFor="let demo of demoData">
+        <a class="demo-list-links" routerLink={{demo.route}}>
+          <mat-card class="demo-card-link">
             <mat-card-header class="card-title">
               <div mat-card-avatar class="header-image"
-                style="background-image: url({{project.avatarImage}})">
+                style="background-image: url({{demo.avatarImage}})">
               </div>
               <mat-card-title>
-                {{project.name }}
+                {{demo.name }}
               </mat-card-title>
               <mat-card-subtitle>
-                {{project.type}}
+                {{demo.type}}
               </mat-card-subtitle>            
             </mat-card-header>
             
             <mat-divider></mat-divider>
             <mat-card-content class="card-description">
-              {{project.description }} 
+              {{demo.description }} 
             </mat-card-content>
+            <mat-divider></mat-divider>
           </mat-card>
         </a>
+        <mat-card class="action-card">
+            <a 
+              mat-raised-button 
+              href="{{demo.sourceCodeLink}}"
+              color="primary"
+              class="demo-source-code-link"
+              >
+                Source Code
+            </a>
+        </mat-card>
       </div>
     </div>    
   </div>

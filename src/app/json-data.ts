@@ -50,13 +50,13 @@ export const PROJECTS: ProjectInfo[] =
         sourceCodeLink: 'https://github.com/vmmirabella/projects/tree/master/Unity%20Prototypes',
         avatarImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/1024px-Unity_Technologies_logo.svg.png'
     },
-    {
+   /* {
         name: 'Web Code Snippets',
         type: 'Angular',
         description: 'Code snippets of various web elements (CRUD operations, basic ui design, CSS/HTML manipulation with Material)',
         sourceCodeLink: '#',
         avatarImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png'
-    },
+    },*/
 ];
 
 export const DEMOS: DemoProjects[] =
@@ -65,7 +65,7 @@ export const DEMOS: DemoProjects[] =
         name: 'E-Commerce',
         type: 'Angular',
         description: 'Short demo showcasing an e-commerce site using angular ',
-        sourceCodeLink: '#',
+        sourceCodeLink: 'https://github.com/vmmirabella/home',
         route: 'e-commerce',
         avatarImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png'
     },

@@ -1,4 +1,5 @@
 $font-size: 30px;
+$max-width: 400px;
 
 .main-content {
   margin: 2%;
@@ -32,17 +33,30 @@ $font-size: 30px;
 
 .content-project {
   margin-left: 20px;
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-list-links, .demo-list-links {
+  display:inline-block;
+  max-width: $max-width;
+  font-size: $font-size - 10px;
+
 }
 
 .project-list-links {
-  display:inline-block;
-  max-width: 400px;
   min-height: 200px;
-  font-size: $font-size - 10px;
+  padding: 10px;
 }
 
-mat-card:hover {
+.demo-list-links, .demo-card-link, .action-card {
+  border-radius: 0px !important;
+}
+
+
+.card-link:hover, .demo-card-link:hover {
   color: #7feeb8;
   opacity: 0.7;
 }
@@ -51,6 +65,13 @@ a {
   text-decoration: none;
 }
 
+.demo-source-code-link:hover {
+  background-color: #ae52d4;
+}
+.action-card {
+  max-width: $max-width;
+  border-radius: 0px !important;
+}
 
 .header-image {
   background-size: cover;

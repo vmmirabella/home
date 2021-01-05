@@ -2,6 +2,7 @@ import { DemoProjects } from './../json-data';
 import { Component, OnInit, Output} from '@angular/core';
 import { AppService } from '../app-service/app.service';
 import { ProjectInfo } from '../json-data';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -30,6 +31,7 @@ export class SplashPageComponent implements OnInit {
   getDemosData(): void {
     this.demoData = this.appService.getDemosData();
   }
+
 
 
   // create service to exchange data between components
