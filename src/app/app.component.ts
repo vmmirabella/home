@@ -9,5 +9,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'github-main';
+  toolbarTitle = "Vito Mirabella's Projects"
 
 }

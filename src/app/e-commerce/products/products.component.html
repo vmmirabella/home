@@ -1,0 +1,18 @@
+
+<div class="product-container">
+  <div *ngFor="let item of products" >
+      <mat-card class="product-card" routerLink="details/{{item.id}}">
+        <div class="product-image-box">
+          <img src="{{item.image}}" class="product-image"/>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="product-header-box">
+          <h5 class="product-name">{{item.name}}</h5>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="product-short-info">
+          <h4 class="product-price">$ {{item.price}}</h4>
+        </div>
+      </mat-card>
+  </div>
+</div>

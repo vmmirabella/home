@@ -1,10 +1,11 @@
 # Current Version: #
 
-* Angular: 9.1.11
-* Angular CLI: 9.1.8
-* Node: 12.18.0
-* Typescript: 3.8.3
-* Material: 9.2.4
+* Angular: 11.0.5
+* Angular CLI: 11.0.5
+* Node: 12.18.3
+* Typescript: 4.0.5
+* Material: 11.0.3
 
 Packages Added:
 * Material [https://material.angular.io/]
+* Angular-cli-ghpages [https://www.npmjs.com/package/angular-cli-ghpages]

@@ -6,6 +6,10 @@ export class ProjectInfo {
     public avatarImage: string;
 }
 
+export class DemoProjects extends ProjectInfo {
+    public route: string;
+}
+
 
 export const PROJECTS: ProjectInfo[] =
 [
@@ -20,14 +24,14 @@ export const PROJECTS: ProjectInfo[] =
     {
         name: 'Crazy Eights',
         type: 'Java',
-        description: 'Crazy Eights card game made with design patterns: Abstract Factory, Factory Method, Strategy and Template made with Java',
+        description: 'Command-line Crazy Eights card game made with design patterns: Abstract Factory, Factory Method, Strategy and Template',
         sourceCodeLink: 'https://github.com/vmmirabella/projects/tree/master/Crazy%20Eights%20(Java)',
         avatarImage: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png'
     },
     {
         name: 'Cards of Magic',
         type: 'Godot',
-        description: 'Turn-based game done through the Godot engine(Unfinished)',
+        description: 'Turn-based game done through the Godot engine (Transfered to Unity)',
         sourceCodeLink: 'https://github.com/vmmirabella/projects/tree/master/Cards%20of%20Magic',
         avatarImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Godot_icon.svg/1200px-Godot_icon.svg.png'
     },
@@ -40,10 +44,29 @@ export const PROJECTS: ProjectInfo[] =
         avatarImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png'
     },
     {
-        name: 'Unity Prototypes',
+        name: 'Game Development Prototypes',
         type: 'Unity',
-        description: 'Focused code snippets to either test a particular idea and/or provide a basis for use elsewhere',
+        description: 'Hyper-focused code snippets for simple reuse and/or used as reference in other projects ',
         sourceCodeLink: 'https://github.com/vmmirabella/projects/tree/master/Unity%20Prototypes',
         avatarImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/1024px-Unity_Technologies_logo.svg.png'
+    },
+    {
+        name: 'Web Code Snippets',
+        type: 'Angular',
+        description: 'Code snippets of various web elements (CRUD operations, basic ui design, CSS/HTML manipulation with Material)',
+        sourceCodeLink: '#',
+        avatarImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png'
+    },
+];
+
+export const DEMOS: DemoProjects[] =
+[
+    {
+        name: 'E-Commerce',
+        type: 'Angular',
+        description: 'Short demo showcasing an e-commerce site using angular ',
+        sourceCodeLink: '#',
+        route: 'e-commerce',
+        avatarImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png'
     },
 ];

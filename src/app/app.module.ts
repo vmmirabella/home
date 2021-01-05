@@ -1,3 +1,4 @@
+import { ProductsComponent } from './e-commerce/products/products.component';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -14,13 +15,14 @@ import { SidenavComponent } from './sidenav/sidenav.component';
    declarations: [
       AppComponent,
       SplashPageComponent,
-      SidenavComponent
+      SidenavComponent,
+      ProductsComponent,
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
       BrowserAnimationsModule,
-      AngularComponentsModule
+      AngularComponentsModule,
    ],
    providers: [],
    bootstrap: [

@@ -1,15 +1,13 @@
 $font-size: 30px;
 
 .main-content {
-  margin: 50px 20px 50px 20px;
+  margin: 2%;
 }
-
 
 .card-title {
   margin-bottom: 20px;
   font-variant: small-caps;
 }
-
 
 .content-title {
   position: relative;
@@ -31,6 +29,7 @@ $font-size: 30px;
   flex-direction: row;
   padding: 20px;
 }
+
 .content-project {
   margin-left: 20px;
   padding: 10px;
@@ -38,8 +37,8 @@ $font-size: 30px;
 
 .project-list-links {
   display:inline-block;
-
-  width: 400px;
+  max-width: 400px;
+  min-height: 200px;
   font-size: $font-size - 10px;
 }
 

@@ -1,3 +1,4 @@
+import { DemoProjects } from './../json-data';
 import { Component, OnInit, Output} from '@angular/core';
 import { AppService } from '../app-service/app.service';
 import { ProjectInfo } from '../json-data';
@@ -10,17 +11,26 @@ import { ProjectInfo } from '../json-data';
 })
 export class SplashPageComponent implements OnInit {
  projectsData: ProjectInfo;
+ firstHeading = 'Github Source Code';
+ secondHeading = 'Development Demos';
+ demoData: DemoProjects;
 
   constructor(private appService: AppService) {
    }
 
   ngOnInit() {
-    this.getJsonData();
+    this.getProjectsData();
+    this.getDemosData();
   }
 
-  getJsonData(): void {
-    this.projectsData = this.appService.getJSONData();
+  getProjectsData(): void {
+    this.projectsData = this.appService.getProjectData();
   }
+
+  getDemosData(): void {
+    this.demoData = this.appService.getDemosData();
+  }
+
 
   // create service to exchange data between components
 }
