@@ -12,4 +12,8 @@ getProducts(): any {
   return PRODUCTS;
 }
 
+getProductsById(productId: number): any {
+  return PRODUCTS.find(product => product.id === productId);
+}
+
 }

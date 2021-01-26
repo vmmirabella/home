@@ -62,7 +62,7 @@ export const PROJECTS: ProjectInfo[] =
 export const DEMOS: DemoProjects[] =
 [
     {
-        name: 'E-Commerce',
+        name: 'E-Commerce (in-progress)',
         type: 'Angular',
         description: 'Short demo showcasing an e-commerce site using angular ',
         sourceCodeLink: 'https://github.com/vmmirabella/home',

@@ -11,7 +11,7 @@ export const PRODUCTS: Product[] = [
         // original image https://images.pexels.com/photos/106839/pexels-photo-106839.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260
         id: 1,
         name: 'Outdoor Folding Lounge Chair',
-        image: 'assets/images/lounge-chair.png',
+        image: 'assets/images/lounge-chair.jpg',
         description: 'Outdoor lounge chair that can be used on the patio, balcony, beach and any other outdoor locations.'
         + ' Made up of 65% polyester and 35% cotton that is easily removeable and replaceable. Can be easily folded and stored to take up less space',
         price: 249.99

@@ -1,6 +1,5 @@
-import { ProductsComponent } from './e-commerce/products/products.component';
 
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +9,11 @@ import { AngularComponentsModule } from './angular-components/angular-components
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { SplashPageComponent } from './splash-page/splash-page.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { MainToolbarComponent } from './e-commerce/main-toolbar/main-toolbar.component';
+import { ProductDetailsComponent } from './e-commerce/product-details/product-details.component';
+import { ProductsComponent } from './e-commerce/products/products.component';
+
+
 
 @NgModule({
    declarations: [
@@ -17,6 +21,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
       SplashPageComponent,
       SidenavComponent,
       ProductsComponent,
+      MainToolbarComponent,
+      ProductDetailsComponent,
    ],
    imports: [
       BrowserModule,
@@ -24,7 +30,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
       BrowserAnimationsModule,
       AngularComponentsModule,
    ],
-   providers: [],
+   providers: [ Title],
    bootstrap: [
       AppComponent
    ]

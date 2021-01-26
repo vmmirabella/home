@@ -6,7 +6,7 @@
     </div>
     <div class="content-box">
       <div class="content-project" *ngFor="let project of projectsData">
-        <a class="project-list-links" href="{{project.sourceCodeLink}}" target="_blank" rel="noopener">
+        <a class="project-list-links" href="{{project.sourceCodeLink}}" target="_blank" rel="noopener" matTooltip="Source Code">
           <mat-card class="card-link">
             <mat-card-header class="card-title">
               <div mat-card-avatar class="header-image"
@@ -37,7 +37,7 @@
     </div>
     <div class="content-box">
       <div class="content-project" *ngFor="let demo of demoData">
-        <a class="demo-list-links" routerLink={{demo.route}}>
+        <a class="demo-list-links" href="{{demo.sourceCodeLink}}" matTooltip="Source Code" target="_blank" rel="noopener">
           <mat-card class="demo-card-link">
             <mat-card-header class="card-title">
               <div mat-card-avatar class="header-image"
@@ -60,12 +60,12 @@
         </a>
         <mat-card class="action-card">
             <a 
-              mat-raised-button 
-              href="{{demo.sourceCodeLink}}"
+              mat-raised-button
+              routerLink={{demo.route}} 
               color="primary"
               class="demo-source-code-link"
               >
-                Source Code
+              Example Demo
             </a>
         </mat-card>
       </div>

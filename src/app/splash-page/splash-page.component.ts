@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class SplashPageComponent implements OnInit {
  projectsData: ProjectInfo;
  firstHeading = 'Github Source Code';
- secondHeading = 'Development Demos';
+ secondHeading = 'Development Demonstrations';
  demoData: DemoProjects;
 
   constructor(private appService: AppService) {

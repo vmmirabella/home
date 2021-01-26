@@ -1,7 +1,8 @@
-
+<app-main-toolbar></app-main-toolbar>
 <div class="product-container">
   <div *ngFor="let item of products" >
-      <mat-card class="product-card" routerLink="details/{{item.id}}">
+    <a [routerLink]="convertWhiteSpace(item.name+'/'+item.id)">
+      <mat-card class="product-card" >
         <div class="product-image-box">
           <img src="{{item.image}}" class="product-image"/>
         </div>
@@ -14,5 +15,6 @@
           <h4 class="product-price">$ {{item.price}}</h4>
         </div>
       </mat-card>
+    </a>
   </div>
 </div>
